@@ -5,6 +5,8 @@ import { extname, resolve, sep } from "node:path";
 
 const root = resolve("dist");
 const port = 4325;
+const repository = process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "reading-atlas";
+const pagesBase = process.env.GITHUB_ACTIONS === "true" ? `/${repository}` : "";
 const mimeTypes = new Map([
   [".css", "text/css; charset=utf-8"],
   [".html", "text/html; charset=utf-8"],
@@ -19,7 +21,10 @@ const server = createServer(async (request, response) => {
   try {
     const requestUrl = new URL(request.url ?? "/", `http://${request.headers.host ?? "127.0.0.1"}`);
     const pathname = decodeURIComponent(requestUrl.pathname);
-    const requested = pathname.endsWith("/") ? `${pathname}index.html` : pathname;
+    const appPath = pagesBase && (pathname === pagesBase || pathname.startsWith(`${pagesBase}/`))
+      ? pathname.slice(pagesBase.length) || "/"
+      : pathname;
+    const requested = appPath.endsWith("/") ? `${appPath}index.html` : appPath;
     const file = resolve(root, `.${requested}`);
     if (file !== root && !file.startsWith(`${root}${sep}`)) throw new Error("Unsafe path");
     const fileStat = await stat(file);
@@ -35,5 +40,5 @@ const server = createServer(async (request, response) => {
   }
 });
 
-server.listen(port, "127.0.0.1", () => console.log(`Serving dist at http://127.0.0.1:${port}`));
+server.listen(port, "127.0.0.1", () => console.log(`Serving dist at http://127.0.0.1:${port}${pagesBase}/`));
 process.on("SIGTERM", () => server.close());
