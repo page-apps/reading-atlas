@@ -1,5 +1,9 @@
 import { defineConfig, devices } from "@playwright/test";
 
+const repository = process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "reading-atlas";
+const pagesBase = process.env.GITHUB_ACTIONS === "true" ? `/${repository}` : "";
+const serverUrl = `http://127.0.0.1:4325${pagesBase}/`;
+
 export default defineConfig({
   testDir: "./e2e",
   fullyParallel: true,
@@ -8,7 +12,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: process.env.CI ? [["html", { open: "never" }], ["list"]] : "list",
   use: {
-    baseURL: "http://127.0.0.1:4325",
+    baseURL: serverUrl,
     trace: "on-first-retry"
   },
   projects: [
@@ -17,7 +21,7 @@ export default defineConfig({
   ],
   webServer: {
     command: "node scripts/serve-dist.mjs",
-    url: "http://127.0.0.1:4325",
+    url: serverUrl,
     reuseExistingServer: !process.env.CI,
     timeout: 30_000
   }

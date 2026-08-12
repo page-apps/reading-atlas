@@ -6,7 +6,7 @@ test("searches the public catalogue and follows an explained connection", async 
     if (message.type() === "error") errors.push(message.text());
   });
 
-  await page.goto("/");
+  await page.goto("./");
   await expect(page.getByRole("heading", { name: /Find the next useful idea/ })).toBeVisible();
   await expect(page.locator("[data-records] .record-card")).toHaveCount(17);
 
@@ -20,7 +20,7 @@ test("searches the public catalogue and follows an explained connection", async 
 
 test("renders the relationship map and supports keyboard node navigation", async ({ page }, testInfo) => {
   test.skip(testInfo.project.name === "mobile", "The mobile project covers the bottom-sheet journey instead.");
-  await page.goto("/?view=map");
+  await page.goto("./?view=map");
   await expect(page.locator("[data-panel='map']")).toBeVisible();
   await expect(page.locator("[data-graph] .graph-node")).toHaveCount(17);
   await page.locator("[data-graph] [data-open-key='author:ursula-k-le-guin']").focus();
@@ -30,14 +30,14 @@ test("renders the relationship map and supports keyboard node navigation", async
 
 test("uses a mobile bottom sheet and exposes the install manifest", async ({ page }, testInfo) => {
   test.skip(testInfo.project.name !== "mobile", "This journey is specific to a narrow viewport.");
-  await page.goto("/");
+  await page.goto("./");
   await page.getByRole("button", { name: "Open A Pattern Language" }).click();
   await expect(page.locator("[data-detail-rail]")).toHaveClass(/is-open/);
   await expect(page.locator("[data-detail]").getByRole("heading", { name: "A Pattern Language" })).toBeVisible();
   await page.locator("[data-detail-close]").click();
   await expect(page.locator("[data-detail-rail]")).not.toHaveClass(/is-open/);
 
-  const manifest = await page.request.get("/manifest.webmanifest");
+  const manifest = await page.request.get("./manifest.webmanifest");
   expect(manifest.ok()).toBe(true);
   await expect(manifest.json()).resolves.toMatchObject({ name: "Reading Atlas", display: "standalone" });
 });
