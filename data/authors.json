@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "authors": [
+    {
+      "id": "donella-meadows",
+      "name": "Donella Meadows",
+      "summary": "A systems thinker and teacher whose practical writing makes feedback, leverage, and system behaviour legible.",
+      "topicIds": ["systems", "institutions"],
+      "tags": ["systems thinking", "ecology", "leverage points"],
+      "notes": ["Return to the leverage-points essay when a problem looks like a list of isolated symptoms."],
+      "links": [
+        { "label": "Donella Meadows Project", "url": "https://donellameadows.org/", "kind": "archive" },
+        { "label": "Systems resources", "url": "https://donellameadows.org/systems-thinking-resources/", "kind": "reading" }
+      ],
+      "relatedAuthors": [
+        { "id": "christopher-alexander", "reason": "Both treat leverage as a property of relationships inside a whole system." }
+      ]
+    },
+    {
+      "id": "ursula-k-le-guin",
+      "name": "Ursula K. Le Guin",
+      "summary": "A novelist, poet, essayist, and translator who used imagined societies to test assumptions about power, gender, freedom, and belonging.",
+      "topicIds": ["alternative-worlds", "institutions"],
+      "tags": ["speculative fiction", "anthropology", "utopia"],
+      "notes": ["Her worlds are useful as thought experiments because their social arrangements stay complicated rather than becoming slogans."],
+      "links": [
+        { "label": "Official website", "url": "https://www.ursulakleguin.com/", "kind": "website" },
+        { "label": "Bibliography", "url": "https://www.ursulakleguin.com/bibliography", "kind": "reading" }
+      ],
+      "relatedAuthors": [
+        { "id": "donella-meadows", "reason": "Both make social systems visible by changing the frame through which they are examined." }
+      ]
+    },
+    {
+      "id": "christopher-alexander",
+      "name": "Christopher Alexander",
+      "summary": "An architect and design theorist concerned with patterns, wholeness, and environments that can grow through participation.",
+      "topicIds": ["living-design", "systems"],
+      "tags": ["architecture", "patterns", "participatory design"],
+      "notes": ["The pattern idea is most useful here as a language for relationships, not as a catalogue of recipes."],
+      "links": [
+        { "label": "Pattern Language", "url": "https://www.patternlanguage.com/", "kind": "archive" },
+        { "label": "Bookshop search", "url": "https://bookshop.org/search?keywords=Christopher%20Alexander", "kind": "bookshop" }
+      ],
+      "relatedAuthors": [
+        { "id": "stewart-brand", "reason": "Brand extends Alexander's concern for living, adaptable places into maintenance and time." }
+      ]
+    },
+    {
+      "id": "stewart-brand",
+      "name": "Stewart Brand",
+      "summary": "A writer and project-builder whose work follows long time horizons, adaptive buildings, tools, and institutional learning.",
+      "topicIds": ["living-design", "systems", "institutions"],
+      "tags": ["adaptation", "long-term thinking", "tools"],
+      "notes": ["Pair the building layers with system feedback: different parts need different rates of change."],
+      "links": [
+        { "label": "Personal archive", "url": "https://sb.longnow.org/", "kind": "website" },
+        { "label": "Long Now", "url": "https://longnow.org/people/stewart-brand", "kind": "profile" }
+      ],
+      "relatedAuthors": [
+        { "id": "christopher-alexander", "reason": "Both argue for design that can adapt through use rather than resist change." },
+        { "id": "donella-meadows", "reason": "Pace layers and feedback loops offer complementary ways to see change in complex systems." }
+      ]
+    },
+    {
+      "id": "andy-matuschak",
+      "name": "Andy Matuschak",
+      "summary": "A researcher and designer exploring tools that help people remember, understand, and develop ideas over time.",
+      "topicIds": ["tools-for-thought", "learning"],
+      "tags": ["notes", "memory", "interface design"],
+      "notes": ["The working notes are as important as the polished essays because they expose the links between ideas."],
+      "links": [
+        { "label": "Website", "url": "https://andymatuschak.org/", "kind": "website" },
+        { "label": "Working notes", "url": "https://notes.andymatuschak.org/", "kind": "notes" }
+      ],
+      "relatedAuthors": [
+        { "id": "maggie-appleton", "reason": "Both explore linked notes and tools for thought as cultural and interface practices." }
+      ]
+    },
+    {
+      "id": "maggie-appleton",
+      "name": "Maggie Appleton",
+      "summary": "A designer and anthropologist creating visual essays about programming, culture, and the ways people cultivate knowledge online.",
+      "topicIds": ["tools-for-thought", "learning"],
+      "tags": ["digital gardens", "visual essays", "anthropology"],
+      "notes": ["Follow the digital-garden trail when thinking about a public atlas that can remain unfinished and useful."],
+      "links": [
+        { "label": "Digital garden", "url": "https://maggieappleton.com/", "kind": "website" },
+        { "label": "RSS feed", "url": "https://maggieappleton.com/rss.xml", "kind": "feed" }
+      ],
+      "relatedAuthors": [
+        { "id": "andy-matuschak", "reason": "Both use public, evolving notes to explore how digital tools shape understanding." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "topics": [
+    {
+      "id": "systems",
+      "name": "Systems",
+      "description": "Feedback, leverage, emergence, and the behaviour of connected wholes.",
+      "accent": "#4f765b"
+    },
+    {
+      "id": "living-design",
+      "name": "Living design",
+      "description": "Places and tools that adapt through use instead of freezing at launch.",
+      "accent": "#b86645"
+    },
+    {
+      "id": "alternative-worlds",
+      "name": "Alternative worlds",
+      "description": "Fiction and social thought that make different institutions imaginable.",
+      "accent": "#7a5f9d"
+    },
+    {
+      "id": "tools-for-thought",
+      "name": "Tools for thought",
+      "description": "Interfaces and practices that extend memory, reasoning, and expression.",
+      "accent": "#3f7196"
+    },
+    {
+      "id": "learning",
+      "name": "Learning",
+      "description": "How knowledge is formed, rehearsed, connected, and made durable.",
+      "accent": "#af7a2d"
+    },
+    {
+      "id": "institutions",
+      "name": "Institutions",
+      "description": "The rules, incentives, and structures that shape collective life.",
+      "accent": "#8b5353"
+    }
+  ]
+}

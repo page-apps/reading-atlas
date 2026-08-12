@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Reading Atlas</title>
+  <rect width="512" height="512" rx="112" fill="#21362f"/>
+  <circle cx="256" cy="246" r="150" fill="none" stroke="#46665a" stroke-width="8"/>
+  <circle cx="256" cy="246" r="88" fill="none" stroke="#46665a" stroke-width="8"/>
+  <path d="M143 173 254 112 371 191M143 173l64 174 164-156M207 347l47-235" fill="none" stroke="#9ab2a8" stroke-width="10" stroke-linecap="round"/>
+  <g stroke="#21362f" stroke-width="10">
+    <circle cx="143" cy="173" r="28" fill="#e77d5f"/>
+    <circle cx="254" cy="112" r="28" fill="#d5aa58"/>
+    <circle cx="371" cy="191" r="28" fill="#8e75a3"/>
+    <circle cx="207" cy="347" r="28" fill="#e7d7b9"/>
+  </g>
+  <path d="M256 189c-26-19-58-20-91-8v119c32-12 64-11 91 8 27-19 59-20 91-8V181c-33-12-65-11-91 8Z" fill="#fffaf0" stroke="#21362f" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M256 189v119" stroke="#d4c9b6" stroke-width="7"/>
+</svg>

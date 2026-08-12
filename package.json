@@ -1,0 +1,34 @@
+{
+  "name": "reading-atlas-app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.20.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "predev": "pnpm run generate:data",
+    "dev": "astro dev",
+    "generate:data": "node scripts/generate-catalog.mjs",
+    "validate:data": "node scripts/validate-data.mjs",
+    "pretypecheck": "pnpm run generate:data",
+    "typecheck": "astro check && tsc --noEmit -p tsconfig.json",
+    "test": "vitest run test",
+    "prebuild": "pnpm run generate:data",
+    "build": "astro build && node scripts/validate-build.mjs",
+    "check": "pnpm run validate:data && pnpm run test && pnpm run typecheck && pnpm run build",
+    "test:e2e": "astro build && playwright test",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "7.2.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.1",
+    "@astrojs/check": "0.9.10",
+    "@types/node": "26.2.0",
+    "typescript": "6.0.3",
+    "vitest": "4.1.10"
+  }
+}

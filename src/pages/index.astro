@@ -1,0 +1,158 @@
+---
+import catalog from "../generated/catalog.json";
+import "../styles/global.css";
+
+const baseUrl = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const [owner = "page-apps", repository = "reading-atlas"] = (process.env.GITHUB_REPOSITORY ?? "page-apps/reading-atlas").split("/");
+const repositoryUrl = `https://github.com/${owner}/${repository}`;
+const version = process.env.GITHUB_SHA?.slice(0, 8) ?? "local";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="A public map of books, authors, notes, and connected ideas." />
+    <meta name="theme-color" content="#21362f" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Reading Atlas" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; frame-src 'none';" />
+    <link rel="manifest" href={`${baseUrl}manifest.webmanifest`} />
+    <link rel="icon" type="image/svg+xml" href={`${baseUrl}favicon.svg`} />
+    <link rel="apple-touch-icon" href={`${baseUrl}icons/icon-192.png`} />
+    <title>Reading Atlas · Books, authors, and ideas—mapped</title>
+  </head>
+  <body data-base-url={baseUrl}>
+    <a class="skip-link" href="#atlas-content">Skip to the atlas</a>
+
+    <header class="topbar">
+      <a class="brand" href={baseUrl} aria-label="Reading Atlas home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><b></b></span>
+        <span><strong>Reading Atlas</strong><small>Books, authors & ideas—mapped</small></span>
+      </a>
+
+      <label class="global-search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg>
+        <span class="sr-only">Search the atlas</span>
+        <input data-search type="search" placeholder="Search books, authors, notes or ideas" autocomplete="off" />
+        <kbd>⌘ K</kbd>
+      </label>
+
+      <div class="header-actions">
+        <div class="view-switch" aria-label="Choose view">
+          <button class="is-active" data-view="library" type="button" aria-pressed="true"><span aria-hidden="true">▦</span> Library</button>
+          <button data-view="map" type="button" aria-pressed="false"><span aria-hidden="true">⌘</span> Map</button>
+        </div>
+        <button class="icon-button install-button" data-install type="button" title="Install Reading Atlas" hidden>↓</button>
+        <a class="icon-button" href={repositoryUrl} target="_blank" rel="noreferrer" title="Open public data repository" aria-label="Open public data repository">↗</a>
+      </div>
+    </header>
+
+    <div class="offline-banner" data-offline hidden role="status"><strong>Offline copy</strong><span>You can keep exploring the last published atlas.</span></div>
+
+    <main class="atlas-layout" id="atlas-content">
+      <aside class="filter-rail" aria-label="Atlas filters">
+        <section class="collection-card">
+          <p class="eyebrow">Public collection</p>
+          <div class="collection-count"><strong>{catalog.counts.books}</strong><span>books<br />on the shelf</span></div>
+          <div class="collection-meta"><span>{catalog.counts.authors} authors</span><i></i><span>{catalog.counts.topics} ideas</span></div>
+        </section>
+
+        <nav class="entity-filters" aria-labelledby="browse-title">
+          <div class="rail-heading"><h2 id="browse-title">Browse</h2><button data-clear type="button">Reset</button></div>
+          <button class="is-active" data-filter-type="all" type="button"><span><i class="filter-glyph glyph-all">✦</i>Everything</span><b>{catalog.counts.books + catalog.counts.authors + catalog.counts.topics}</b></button>
+          <button data-filter-type="book" type="button"><span><i class="filter-glyph glyph-book">▤</i>Books</span><b>{catalog.counts.books}</b></button>
+          <button data-filter-type="author" type="button"><span><i class="filter-glyph glyph-author">◉</i>Authors</span><b>{catalog.counts.authors}</b></button>
+          <button data-filter-type="topic" type="button"><span><i class="filter-glyph glyph-topic">⌁</i>Ideas</span><b>{catalog.counts.topics}</b></button>
+        </nav>
+
+        <section class="topic-filters" aria-labelledby="topics-title">
+          <div class="rail-heading"><h2 id="topics-title">Idea trails</h2><span>one at a time</span></div>
+          <div data-topic-filters></div>
+        </section>
+
+        <section class="reading-filter">
+          <label for="status-filter">Reading shelf</label>
+          <select id="status-filter" data-status>
+            <option value="all">Any status</option>
+            <option value="reading">Reading now</option>
+            <option value="read">Read</option>
+            <option value="queued">Want to read</option>
+          </select>
+        </section>
+
+        <aside class="public-note"><span aria-hidden="true">◎</span><p><strong>Public by design.</strong> The catalogue is ordinary JSON, reviewed in Git, and rebuilt by Actions.</p></aside>
+      </aside>
+
+      <section class="discovery-panel" aria-live="polite">
+        <div class="discovery-intro">
+          <div>
+            <p class="eyebrow">Follow what connects</p>
+            <h1>Find the next useful <em>idea.</em></h1>
+            <p>Move from a book to its author, from an author to their ongoing work, and through the topics that hold the trail together.</p>
+          </div>
+          <div class="mini-map" aria-hidden="true"><i></i><i></i><i></i><i></i><span></span><b></b><b></b></div>
+        </div>
+
+        <div class="mobile-filter-strip" aria-label="Quick filters">
+          <button class="is-active" data-mobile-type="all" type="button">All</button>
+          <button data-mobile-type="book" type="button">Books</button>
+          <button data-mobile-type="author" type="button">Authors</button>
+          <button data-mobile-type="topic" type="button">Ideas</button>
+        </div>
+
+        <section class="library-view" data-panel="library" aria-labelledby="results-title">
+          <div class="results-heading">
+            <div><p class="eyebrow" data-results-kicker>Curated shelf</p><h2 id="results-title" data-results-title>Everything in the atlas</h2></div>
+            <span><b data-results-count>{catalog.counts.books + catalog.counts.authors + catalog.counts.topics}</b> results</span>
+          </div>
+          <div class="active-filter" data-active-filter hidden></div>
+          <div class="record-grid" data-records></div>
+          <div class="empty-state" data-empty hidden><span aria-hidden="true">⌕</span><h2>No trail starts here yet</h2><p>Try a broader search or clear the current filters.</p><button data-clear type="button">Clear filters</button></div>
+        </section>
+
+        <section class="map-view" data-panel="map" aria-labelledby="map-title" hidden>
+          <div class="results-heading map-heading">
+            <div><p class="eyebrow">Relationship view</p><h2 id="map-title">The idea map</h2></div>
+            <div class="map-legend"><span><i class="legend-author"></i>Author</span><span><i class="legend-book"></i>Book</span><span><i class="legend-topic"></i>Idea</span></div>
+          </div>
+          <p class="map-help">Select any node to open its detail. Faded nodes sit outside the current filter; dotted paths are curator-defined relationships.</p>
+          <div class="graph-frame" tabindex="0" aria-label="Scrollable relationship map">
+            <svg data-graph viewBox="0 0 960 640" role="img" aria-label="Graph of authors, books, and topics"></svg>
+          </div>
+          <div class="map-caption"><span><i></i>Wrote or explores</span><span><i class="dotted"></i>Curated connection</span><strong><b data-map-visible>0</b> visible nodes</strong></div>
+        </section>
+      </section>
+
+      <aside class="detail-rail" data-detail-rail aria-label="Selected atlas record">
+        <button class="detail-close" data-detail-close type="button" aria-label="Close details">×</button>
+        <div class="detail-empty" data-detail-empty>
+          <div class="empty-orbit" aria-hidden="true"><i></i><i></i><i></i><span>✦</span></div>
+          <p class="eyebrow">Choose a starting point</p>
+          <h2>Every record opens another trail.</h2>
+          <p>Select a book, author, or idea to see notes, useful links, and the reasons its nearest neighbours belong together.</p>
+        </div>
+        <div data-detail hidden></div>
+      </aside>
+    </main>
+
+    <footer><span>Reading Atlas · {version}</span><span>Public data · deterministic links · no tracking</span><a href={repositoryUrl} target="_blank" rel="noreferrer">View source and data ↗</a></footer>
+
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <button class="is-active" data-mobile-view="library" type="button"><span aria-hidden="true">▦</span><small>Library</small></button>
+      <button data-mobile-view="map" type="button"><span aria-hidden="true">⌘</span><small>Map</small></button>
+      <button data-mobile-search type="button"><span aria-hidden="true">⌕</span><small>Search</small></button>
+      <a href={repositoryUrl} target="_blank" rel="noreferrer"><span aria-hidden="true">↗</span><small>Data</small></a>
+    </nav>
+
+    <noscript><div class="noscript">Reading Atlas needs JavaScript for local search and the relationship explorer. The canonical catalogue remains available in the public repository.</div></noscript>
+    <script is:inline id="reading-atlas-data" type="application/json" set:html={JSON.stringify(catalog)}></script>
+    <script>
+      import { startReadingAtlas } from "../lib/app";
+      startReadingAtlas();
+    </script>
+  </body>
+</html>
