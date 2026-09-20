@@ -40,7 +40,7 @@ The build generates `src/generated/catalog.json`. That file contains resolved ed
 
 ## Architecture
 
-This app uses the Repo Apps public-data model:
+This app uses the App Framework public-data model:
 
 ```text
 public repository commit
