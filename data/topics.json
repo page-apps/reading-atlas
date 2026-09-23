@@ -2,34 +2,64 @@
   "schemaVersion": 1,
   "topics": [
     {
-      "id": "systems",
-      "name": "Systems",
-      "description": "Feedback, leverage, emergence, and the behaviour of connected wholes.",
-      "accent": "#4f765b"
-    },
-    {
-      "id": "living-design",
-      "name": "Living design",
-      "description": "Places and tools that adapt through use instead of freezing at launch.",
+      "id": "personal-growth",
+      "name": "Personal growth",
+      "description": "Habits, purpose, resilience, and choices that shape how people live and work.",
       "accent": "#b86645"
-    },
-    {
-      "id": "alternative-worlds",
-      "name": "Alternative worlds",
-      "description": "Fiction and social thought that make different institutions imaginable.",
-      "accent": "#7a5f9d"
-    },
-    {
-      "id": "tools-for-thought",
-      "name": "Tools for thought",
-      "description": "Interfaces and practices that extend memory, reasoning, and expression.",
-      "accent": "#3f7196"
     },
     {
       "id": "learning",
       "name": "Learning",
-      "description": "How knowledge is formed, rehearsed, connected, and made durable.",
+      "description": "How people build skills, rethink assumptions, and make knowledge useful.",
       "accent": "#af7a2d"
+    },
+    {
+      "id": "technology-society",
+      "name": "Technology and society",
+      "description": "How technology changes human capability, information, and collective life.",
+      "accent": "#3f7196"
+    },
+    {
+      "id": "health",
+      "name": "Health and wellbeing",
+      "description": "Sleep, longevity, attention, and the conditions that support wellbeing.",
+      "accent": "#52705a"
+    },
+    {
+      "id": "money",
+      "name": "Money",
+      "description": "The behaviour, decisions, and trade-offs involved in money and financial life.",
+      "accent": "#9c7338"
+    },
+    {
+      "id": "relationships",
+      "name": "Relationships",
+      "description": "Communication, social behaviour, and the ways people relate to one another.",
+      "accent": "#8b5353"
+    },
+    {
+      "id": "creativity",
+      "name": "Creativity",
+      "description": "Creative work, influences, and practices for making things.",
+      "accent": "#765b8f"
+    },
+    {
+      "id": "history-ideas",
+      "name": "History and ideas",
+      "description": "Historical narratives and ideas that help explain human societies and their futures.",
+      "accent": "#7a5f9d"
+    },
+    {
+      "id": "fiction",
+      "name": "Fiction",
+      "description": "Imagined worlds and stories that explore human experience.",
+      "accent": "#b15f43"
+    },
+    {
+      "id": "emotional-intelligence",
+      "name": "Emotional intelligence",
+      "description": "Recognising emotions, understanding emotional responses, and choosing how to act.",
+      "accent": "#ad5968"
     },
     {
       "id": "institutions",

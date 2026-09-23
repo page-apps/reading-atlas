@@ -2,95 +2,960 @@
   "schemaVersion": 1,
   "authors": [
     {
-      "id": "donella-meadows",
-      "name": "Donella Meadows",
-      "summary": "A systems thinker and teacher whose practical writing makes feedback, leverage, and system behaviour legible.",
-      "topicIds": ["systems", "institutions"],
-      "tags": ["systems thinking", "ecology", "leverage points"],
-      "notes": ["Return to the leverage-points essay when a problem looks like a list of isolated symptoms."],
-      "links": [
-        { "label": "Donella Meadows Project", "url": "https://donellameadows.org/", "kind": "archive" },
-        { "label": "Systems resources", "url": "https://donellameadows.org/systems-thinking-resources/", "kind": "reading" }
+      "id": "adam-grant",
+      "name": "Adam Grant",
+      "summary": "Author of Hidden Potential, Think Again.",
+      "topicIds": [
+        "learning",
+        "personal-growth"
       ],
-      "relatedAuthors": [
-        { "id": "christopher-alexander", "reason": "Both treat leverage as a property of relationships inside a whole system." }
-      ]
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "Hidden Potential",
+          "url": "https://www.kobo.com/au/en/ebook/hidden-potential-5",
+          "kind": "book"
+        },
+        {
+          "label": "Hidden Potential",
+          "url": "https://www.kobo.com/au/en/ebook/think-again-16",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
     },
     {
-      "id": "ursula-k-le-guin",
-      "name": "Ursula K. Le Guin",
-      "summary": "A novelist, poet, essayist, and translator who used imagined societies to test assumptions about power, gender, freedom, and belonging.",
-      "topicIds": ["alternative-worlds", "institutions"],
-      "tags": ["speculative fiction", "anthropology", "utopia"],
-      "notes": ["Her worlds are useful as thought experiments because their social arrangements stay complicated rather than becoming slogans."],
-      "links": [
-        { "label": "Official website", "url": "https://www.ursulakleguin.com/", "kind": "website" },
-        { "label": "Bibliography", "url": "https://www.ursulakleguin.com/bibliography", "kind": "reading" }
+      "id": "ali-abdaal",
+      "name": "Ali Abdaal",
+      "summary": "Author of Feel-Good Productivity.",
+      "topicIds": [
+        "learning",
+        "personal-growth"
       ],
-      "relatedAuthors": [
-        { "id": "donella-meadows", "reason": "Both make social systems visible by changing the frame through which they are examined." }
-      ]
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "Feel-Good Productivity",
+          "url": "https://www.kobo.com/au/en/ebook/feel-good-productivity",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
     },
     {
-      "id": "christopher-alexander",
-      "name": "Christopher Alexander",
-      "summary": "An architect and design theorist concerned with patterns, wholeness, and environments that can grow through participation.",
-      "topicIds": ["living-design", "systems"],
-      "tags": ["architecture", "patterns", "participatory design"],
-      "notes": ["The pattern idea is most useful here as a language for relationships, not as a catalogue of recipes."],
-      "links": [
-        { "label": "Pattern Language", "url": "https://www.patternlanguage.com/", "kind": "archive" },
-        { "label": "Bookshop search", "url": "https://bookshop.org/search?keywords=Christopher%20Alexander", "kind": "bookshop" }
+      "id": "angela-duckworth",
+      "name": "Angela Duckworth",
+      "summary": "Author of Grit.",
+      "topicIds": [
+        "learning",
+        "personal-growth"
       ],
-      "relatedAuthors": [
-        { "id": "stewart-brand", "reason": "Brand extends Alexander's concern for living, adaptable places into maintenance and time." }
-      ]
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "Grit",
+          "url": "https://www.kobo.com/au/en/ebook/grit-12",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
     },
     {
-      "id": "stewart-brand",
-      "name": "Stewart Brand",
-      "summary": "A writer and project-builder whose work follows long time horizons, adaptive buildings, tools, and institutional learning.",
-      "topicIds": ["living-design", "systems", "institutions"],
-      "tags": ["adaptation", "long-term thinking", "tools"],
-      "notes": ["Pair the building layers with system feedback: different parts need different rates of change."],
-      "links": [
-        { "label": "Personal archive", "url": "https://sb.longnow.org/", "kind": "website" },
-        { "label": "Long Now", "url": "https://longnow.org/people/stewart-brand", "kind": "profile" }
+      "id": "audrey-tang",
+      "name": "Audrey Tang",
+      "summary": "Author of Plurality.",
+      "topicIds": [
+        "institutions",
+        "technology-society"
       ],
-      "relatedAuthors": [
-        { "id": "christopher-alexander", "reason": "Both argue for design that can adapt through use rather than resist change." },
-        { "id": "donella-meadows", "reason": "Pace layers and feedback loops offer complementary ways to see change in complex systems." }
-      ]
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "Plurality",
+          "url": "https://www.plurality.net/",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
     },
     {
-      "id": "andy-matuschak",
-      "name": "Andy Matuschak",
-      "summary": "A researcher and designer exploring tools that help people remember, understand, and develop ideas over time.",
-      "topicIds": ["tools-for-thought", "learning"],
-      "tags": ["notes", "memory", "interface design"],
-      "notes": ["The working notes are as important as the polished essays because they expose the links between ideas."],
-      "links": [
-        { "label": "Website", "url": "https://andymatuschak.org/", "kind": "website" },
-        { "label": "Working notes", "url": "https://notes.andymatuschak.org/", "kind": "notes" }
+      "id": "austin-kleon",
+      "name": "Austin Kleon",
+      "summary": "Author of The Steal Like an Artist.",
+      "topicIds": [
+        "creativity",
+        "learning"
       ],
-      "relatedAuthors": [
-        { "id": "maggie-appleton", "reason": "Both explore linked notes and tools for thought as cultural and interface practices." }
-      ]
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "The Steal Like an Artist",
+          "url": "https://www.kobo.com/au/en/ebook/steal-like-an-artist-3",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
     },
     {
-      "id": "maggie-appleton",
-      "name": "Maggie Appleton",
-      "summary": "A designer and anthropologist creating visual essays about programming, culture, and the ways people cultivate knowledge online.",
-      "topicIds": ["tools-for-thought", "learning"],
-      "tags": ["digital gardens", "visual essays", "anthropology"],
-      "notes": ["Follow the digital-garden trail when thinking about a public atlas that can remain unfinished and useful."],
-      "links": [
-        { "label": "Digital garden", "url": "https://maggieappleton.com/", "kind": "website" },
-        { "label": "RSS feed", "url": "https://maggieappleton.com/rss.xml", "kind": "feed" }
+      "id": "bill-perkins",
+      "name": "Bill Perkins",
+      "summary": "Author of Die With Zero.",
+      "topicIds": [
+        "money",
+        "personal-growth"
       ],
-      "relatedAuthors": [
-        { "id": "andy-matuschak", "reason": "Both use public, evolving notes to explore how digital tools shape understanding." }
-      ]
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "Die With Zero",
+          "url": "https://www.kobo.com/au/en/ebook/die-with-zero-3",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "brian-tracy",
+      "name": "Brian Tracy",
+      "summary": "Author of Eat That Frog!.",
+      "topicIds": [
+        "personal-growth"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "Eat That Frog!",
+          "url": "https://www.kobo.com/au/en/ebook/eat-that-frog-1",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "cal-newport",
+      "name": "Cal Newport",
+      "summary": "Author of Slow Productivity.",
+      "topicIds": [
+        "personal-growth"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "Slow Productivity",
+          "url": "https://www.kobo.com/au/en/ebook/slow-productivity-2",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "cynthia-covey-haller",
+      "name": "Cynthia Covey Haller",
+      "summary": "Author of Live Life in Crescendo.",
+      "topicIds": [
+        "personal-growth"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "Live Life in Crescendo",
+          "url": "https://www.kobo.com/au/en/ebook/live-life-in-crescendo-3",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "daniel-g-amen",
+      "name": "Daniel G. Amen",
+      "summary": "Author of Your Brain Is Always Listening.",
+      "topicIds": [
+        "emotional-intelligence",
+        "health"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "Your Brain Is Always Listening",
+          "url": "https://www.kobo.com/au/en/ebook/your-brain-is-always-listening",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "david-allen",
+      "name": "David Allen",
+      "summary": "Author of Getting Things Done.",
+      "topicIds": [
+        "personal-growth"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "Getting Things Done",
+          "url": "https://www.kobo.com/au/en/ebook/getting-things-done-4/_-y83lnkDk-l_C0hqPksrA",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "david-epstein",
+      "name": "David Epstein",
+      "summary": "Author of Range.",
+      "topicIds": [
+        "learning",
+        "personal-growth"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "Range",
+          "url": "https://www.kobo.com/au/en/ebook/range-5",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "david-m-r-covey",
+      "name": "David M. R. Covey",
+      "summary": "Author of Trap Tales by David M. R. Covey.",
+      "topicIds": [
+        "personal-growth"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "Trap Tales by David M. R. Covey",
+          "url": "https://www.kobo.com/au/en/ebook/trap-tales",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "e-glen-weyl",
+      "name": "E. Glen Weyl",
+      "summary": "Author of Plurality.",
+      "topicIds": [
+        "institutions",
+        "technology-society"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "Plurality",
+          "url": "https://www.plurality.net/",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "eddie-jaku",
+      "name": "Eddie Jaku",
+      "summary": "Author of The Happiest Man on Earth.",
+      "topicIds": [
+        "history-ideas",
+        "personal-growth"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "The Happiest Man on Earth",
+          "url": "https://www.kobo.com/au/zh/ebook/the-happiest-man-on-earth",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "eric-jorgenson",
+      "name": "Eric Jorgenson",
+      "summary": "Author of The Almanack of Naval Ravikant.",
+      "topicIds": [
+        "money",
+        "personal-growth"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "The Almanack of Naval Ravikant",
+          "url": "https://www.kobo.com/au/en/ebook/the-almanack-of-naval-ravikant",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "ethan-mollick",
+      "name": "Ethan Mollick",
+      "summary": "Author of Co-Intelligence.",
+      "topicIds": [
+        "learning",
+        "technology-society"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "Co-Intelligence",
+          "url": "https://www.kobo.com/au/en/ebook/co-intelligence",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "fumitake-koga",
+      "name": "Fumitake Koga",
+      "summary": "Author of The Courage to Be Disliked, 被討厭的勇氣：自我啟發之父「阿德勒」的教導.",
+      "topicIds": [
+        "personal-growth",
+        "relationships"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "The Courage to Be Disliked",
+          "url": "https://www.kobo.com/au/en/ebook/the-courage-to-be-disliked",
+          "kind": "book"
+        },
+        {
+          "label": "The Courage to Be Disliked",
+          "url": "https://www.kobo.com/tw/zh/ebook/nvedXSs0ujimMMwueunJew",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "greg-beato",
+      "name": "Greg Beato",
+      "summary": "Author of Superagency.",
+      "topicIds": [
+        "technology-society"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "Superagency",
+          "url": "https://www.kobo.com/us/en/ebook/superagency",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "hermann-hesse",
+      "name": "Hermann Hesse",
+      "summary": "Author of 流浪者之歌.",
+      "topicIds": [
+        "fiction",
+        "personal-growth"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "流浪者之歌",
+          "url": "https://www.haodoo.net/?M=Share&P=1010490283",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "ichiro-kishimi",
+      "name": "Ichiro Kishimi",
+      "summary": "Author of The Courage to Be Disliked, 被討厭的勇氣：自我啟發之父「阿德勒」的教導.",
+      "topicIds": [
+        "personal-growth",
+        "relationships"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "The Courage to Be Disliked",
+          "url": "https://www.kobo.com/au/en/ebook/the-courage-to-be-disliked",
+          "kind": "book"
+        },
+        {
+          "label": "The Courage to Be Disliked",
+          "url": "https://www.kobo.com/tw/zh/ebook/nvedXSs0ujimMMwueunJew",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "jay-shetty",
+      "name": "Jay Shetty",
+      "summary": "Author of Think Like a Monk.",
+      "topicIds": [
+        "health",
+        "personal-growth"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "Think Like a Monk",
+          "url": "https://www.kobo.com/au/en/ebook/think-like-a-monk-the-secret-of-how-to-harness-the-power-of-positivity-and-be-happy-now-1",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "johann-hari",
+      "name": "Johann Hari",
+      "summary": "Author of Stolen Focus.",
+      "topicIds": [
+        "health",
+        "technology-society"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "Stolen Focus",
+          "url": "https://www.kobo.com/au/en/ebook/stolen-focus-1",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "jonathan-haidt",
+      "name": "Jonathan Haidt",
+      "summary": "Author of The Anxious Generation.",
+      "topicIds": [
+        "health",
+        "technology-society"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "The Anxious Generation",
+          "url": "https://www.kobo.com/au/en/ebook/the-anxious-generation-2",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "kevin-kelly",
+      "name": "Kevin Kelly",
+      "summary": "Author of The Inevitable.",
+      "topicIds": [
+        "technology-society"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "The Inevitable",
+          "url": "https://www.kobo.com/au/en/ebook/the-inevitable-9",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "liu-cixin",
+      "name": "Liu Cixin",
+      "summary": "Author of 三體.",
+      "topicIds": [
+        "fiction",
+        "technology-society"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "三體",
+          "url": "https://www.haodoo.net/?M=book&P=16E1",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "mark-manson",
+      "name": "Mark Manson",
+      "summary": "Author of The Subtle Art of Not Giving a F*ck.",
+      "topicIds": [
+        "personal-growth"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "The Subtle Art of Not Giving a F*ck",
+          "url": "https://www.kobo.com/au/zh/ebook/the-subtle-art-of-not-giving-a-f-ck-1",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "matthew-walker",
+      "name": "Matthew Walker",
+      "summary": "Author of Why We Sleep.",
+      "topicIds": [
+        "health",
+        "learning"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "Why We Sleep",
+          "url": "https://www.kobo.com/au/en/ebook/why-we-sleep",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "mel-robbins",
+      "name": "Mel Robbins",
+      "summary": "Author of The Let Them Theory.",
+      "topicIds": [
+        "emotional-intelligence",
+        "personal-growth"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "The Let Them Theory",
+          "url": "https://www.penguinrandomhouse.com/books/743134/the-let-them-theory-by-mel-robbins/",
+          "kind": "book"
+        },
+        {
+          "label": "The Let Them Theory",
+          "url": "https://www.melrobbins.com/book/the-let-them-theory/",
+          "kind": "book"
+        },
+        {
+          "label": "The Let Them Theory",
+          "url": "https://www.amazon.com.au/Let-Them-Theory-Life-Changing-Millions/dp/1401971369",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "michael-bhaskar",
+      "name": "Michael Bhaskar",
+      "summary": "Author of The Coming Wave.",
+      "topicIds": [
+        "institutions",
+        "technology-society"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "The Coming Wave",
+          "url": "https://www.kobo.com/au/en/ebook/the-coming-wave-5",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "morgan-housel",
+      "name": "Morgan Housel",
+      "summary": "Author of The Psychology of Money.",
+      "topicIds": [
+        "money",
+        "personal-growth"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "The Psychology of Money",
+          "url": "https://www.kobo.com/au/en/ebook/the-psychology-of-money-15",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "mustafa-suleyman",
+      "name": "Mustafa Suleyman",
+      "summary": "Author of The Coming Wave.",
+      "topicIds": [
+        "institutions",
+        "technology-society"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "The Coming Wave",
+          "url": "https://www.kobo.com/au/en/ebook/the-coming-wave-5",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "peter-attia",
+      "name": "Peter Attia",
+      "summary": "Author of Outlive.",
+      "topicIds": [
+        "health"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "Outlive",
+          "url": "https://www.kobo.com/au/en/ebook/outlive-7",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "reid-hoffman",
+      "name": "Reid Hoffman",
+      "summary": "Author of Superagency.",
+      "topicIds": [
+        "technology-society"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "Superagency",
+          "url": "https://www.kobo.com/us/en/ebook/superagency",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "robert-b-cialdini-phd",
+      "name": "Robert B Cialdini PhD",
+      "summary": "Author of Influence.",
+      "topicIds": [
+        "learning",
+        "relationships"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "Influence",
+          "url": "https://www.kobo.com/au/en/ebook/influence-new-and-expanded",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "ryan-holiday",
+      "name": "Ryan Holiday",
+      "summary": "Author of The Obstacle is the Way.",
+      "topicIds": [
+        "history-ideas",
+        "personal-growth"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "The Obstacle is the Way",
+          "url": "https://www.kobo.com/au/en/ebook/the-obstacle-is-the-way-10th-anniversary-edition-1",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "sarah-bakewell",
+      "name": "Sarah Bakewell",
+      "summary": "Author of How to Live.",
+      "topicIds": [
+        "history-ideas",
+        "personal-growth"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "How to Live",
+          "url": "https://www.kobo.com/au/en/ebook/how-to-live-17",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "sawyer-robbins",
+      "name": "Sawyer Robbins",
+      "summary": "Author of The Let Them Theory.",
+      "topicIds": [
+        "emotional-intelligence",
+        "personal-growth"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "The Let Them Theory",
+          "url": "https://www.penguinrandomhouse.com/books/743134/the-let-them-theory-by-mel-robbins/",
+          "kind": "book"
+        },
+        {
+          "label": "The Let Them Theory",
+          "url": "https://www.melrobbins.com/book/the-let-them-theory/",
+          "kind": "book"
+        },
+        {
+          "label": "The Let Them Theory",
+          "url": "https://www.amazon.com.au/Let-Them-Theory-Life-Changing-Millions/dp/1401971369",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "scott-h-young",
+      "name": "Scott H. Young",
+      "summary": "Author of Ultralearning.",
+      "topicIds": [
+        "learning",
+        "personal-growth"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "Ultralearning",
+          "url": "https://www.kobo.com/au/zh/ebook/ultralearning-accelerate-your-career-master-hard-skills-and-outsmart-the-competition",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "sean-covey",
+      "name": "Sean Covey",
+      "summary": "Author of The 7 Habits of Highly Effective People.",
+      "topicIds": [
+        "personal-growth",
+        "relationships"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "The 7 Habits of Highly Effective People",
+          "url": "https://www.kobo.com/au/en/ebook/the-7-habits-of-highly-effective-people-revised-and-updated",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "simon-sinek",
+      "name": "Simon Sinek",
+      "summary": "Author of Start with Why, Leaders Eat Last.",
+      "topicIds": [
+        "personal-growth",
+        "relationships"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "Start with Why",
+          "url": "https://www.kobo.com/au/en/ebook/start-with-why",
+          "kind": "book"
+        },
+        {
+          "label": "Start with Why",
+          "url": "https://simonsinek.com/books/leaders-eat-last",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "stephen-r-covey",
+      "name": "Stephen R. Covey",
+      "summary": "Author of Live Life in Crescendo, The 7 Habits of Highly Effective People.",
+      "topicIds": [
+        "personal-growth",
+        "relationships"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "Live Life in Crescendo",
+          "url": "https://www.kobo.com/au/en/ebook/live-life-in-crescendo-3",
+          "kind": "book"
+        },
+        {
+          "label": "Live Life in Crescendo",
+          "url": "https://www.kobo.com/au/en/ebook/the-7-habits-of-highly-effective-people-revised-and-updated",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "steven-bartlett",
+      "name": "Steven Bartlett",
+      "summary": "Author of The Diary of a CEO.",
+      "topicIds": [
+        "personal-growth",
+        "relationships"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "The Diary of a CEO",
+          "url": "https://www.kobo.com/au/en/ebook/the-diary-of-a-ceo-2",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "susan-cain",
+      "name": "Susan Cain",
+      "summary": "Author of Quiet.",
+      "topicIds": [
+        "learning",
+        "relationships"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "Quiet",
+          "url": "https://www.kobo.com/au/zh/ebook/quiet-the-power-of-introverts-in-a-world-that-can-t-stop-talking",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "thomas-erikson",
+      "name": "Thomas Erikson",
+      "summary": "Author of Surrounded by Idiots.",
+      "topicIds": [
+        "relationships"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "Surrounded by Idiots",
+          "url": "https://www.kobo.com/au/en/ebook/surrounded-by-idiots-2",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "tiago-forte",
+      "name": "Tiago Forte",
+      "summary": "Author of Building a Second Brain.",
+      "topicIds": [
+        "learning",
+        "personal-growth"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "Building a Second Brain",
+          "url": "https://www.kobo.com/au/en/ebook/building-a-second-brain-2",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "walter-mischel",
+      "name": "Walter Mischel",
+      "summary": "Author of The Marshmallow Test.",
+      "topicIds": [
+        "health",
+        "learning"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "The Marshmallow Test",
+          "url": "https://www.kobo.com/au/en/ebook/the-marshmallow-test",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
+    },
+    {
+      "id": "yuval-noah-harari",
+      "name": "Yuval Noah Harari",
+      "summary": "Author of 21 Lessons for the 21st Century, Homo Deus, Nexus and other books in this shelf.",
+      "topicIds": [
+        "history-ideas",
+        "technology-society"
+      ],
+      "tags": [],
+      "notes": [],
+      "links": [
+        {
+          "label": "21 Lessons for the 21st Century",
+          "url": "https://www.kobo.com/au/en/ebook/21-lessons-for-the-21st-century",
+          "kind": "book"
+        },
+        {
+          "label": "21 Lessons for the 21st Century",
+          "url": "https://www.kobo.com/au/en/ebook/homo-deus",
+          "kind": "book"
+        },
+        {
+          "label": "21 Lessons for the 21st Century",
+          "url": "https://www.audible.com.au/pd/B0CSYWX61F",
+          "kind": "book"
+        }
+      ],
+      "relatedAuthors": []
     }
   ]
 }
