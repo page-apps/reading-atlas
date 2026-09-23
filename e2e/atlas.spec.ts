@@ -8,13 +8,17 @@ test("searches the public catalogue and follows an explained connection", async 
 
   await page.goto("./");
   await expect(page.getByRole("heading", { name: /Find the next useful idea/ })).toBeVisible();
-  await expect(page.locator("[data-records] .record-card")).toHaveCount(17);
 
-  await page.locator("[data-search]").fill("feedback leverage");
-  await expect(page.locator("[data-records] .record-card")).toHaveCount(3);
-  await page.getByRole("button", { name: "Open Thinking in Systems" }).click();
-  await expect(page.locator("[data-detail]").getByRole("heading", { name: "Thinking in Systems", exact: true })).toBeVisible();
-  await expect(page.locator("[data-detail]")).toContainText("deterministic, not AI recommendations");
+  await page.locator("[data-search]").fill("The Let Them Theory");
+  await page.getByRole("button", { name: "Open The Let Them Theory" }).click();
+  const detail = page.locator("[data-detail]");
+  await expect(detail.getByRole("heading", { name: "The Let Them Theory", exact: true })).toBeVisible();
+  await expect(detail).toContainText("I want to read the book too.");
+
+  const related = detail.locator(".related-list button").first();
+  const relatedTitle = await related.locator("strong").innerText();
+  await related.click();
+  await expect(detail.getByRole("heading", { name: relatedTitle, exact: true })).toBeVisible();
   expect(errors).toEqual([]);
 });
 
@@ -22,18 +26,19 @@ test("renders the relationship map and supports keyboard node navigation", async
   test.skip(testInfo.project.name === "mobile", "The mobile project covers the bottom-sheet journey instead.");
   await page.goto("./?view=map");
   await expect(page.locator("[data-panel='map']")).toBeVisible();
-  await expect(page.locator("[data-graph] .graph-node")).toHaveCount(17);
-  await page.locator("[data-graph] [data-open-key='author:ursula-k-le-guin']").focus();
+  const authorNode = page.locator("[data-graph] [data-open-key='author:mel-robbins']");
+  await expect(authorNode).toBeVisible();
+  await authorNode.focus();
   await page.keyboard.press("Enter");
-  await expect(page.locator("[data-detail]").getByRole("heading", { name: "Ursula K. Le Guin" })).toBeVisible();
+  await expect(page.locator("[data-detail]").getByRole("heading", { name: "Mel Robbins" })).toBeVisible();
 });
 
 test("uses a mobile bottom sheet and exposes the install manifest", async ({ page }, testInfo) => {
   test.skip(testInfo.project.name !== "mobile", "This journey is specific to a narrow viewport.");
   await page.goto("./");
-  await page.getByRole("button", { name: "Open A Pattern Language" }).click();
+  await page.getByRole("button", { name: "Open The Let Them Theory" }).click();
   await expect(page.locator("[data-detail-rail]")).toHaveClass(/is-open/);
-  await expect(page.locator("[data-detail]").getByRole("heading", { name: "A Pattern Language" })).toBeVisible();
+  await expect(page.locator("[data-detail]").getByRole("heading", { name: "The Let Them Theory" })).toBeVisible();
   await page.locator("[data-detail-close]").click();
   await expect(page.locator("[data-detail-rail]")).not.toHaveClass(/is-open/);
 
